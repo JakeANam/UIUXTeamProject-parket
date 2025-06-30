@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+.usageTop {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+}
+
+.minbanner {
+    width: 100%;
+    height: 40px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.usageContentWrap {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+
+
+    //서브메뉴 이용내역 + 조회하기
+    .usageSubMenu {
+        margin: {
+            top: 60px;
+            right: 50px;
+        }
+
+        height: 100%;
+
+        .usageMenu1 {
+            width: 217px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #14C6A4;
+            cursor: default;
+            border-radius: 40px 10px 0 0;
+            margin-bottom: 5px;
+
+            h3 {
+                font: {
+                    size: 25px;
+                    weight: 500;
+                }
+
+                margin: 0;
+                color: #fff;
+            }
+
+        }
+
+        .usageMenu2 {
+            width: 217px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #14C6A4;
+            cursor: pointer;
+            margin-bottom: 5px;
+
+            p {
+                font: {
+                    size: 18px;
+                    weight: 500;
+                }
+
+                color: #14C6A4;
+                margin: 0;
+            }
+        }
+
+        .usageDetailsMenu2 {
+            border: 1px solid #dee2e6;
+
+            p {
+                color: #666;
+                font-weight: 400;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .usageMenu5 {
+            width: 217px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #dee2e6;
+            cursor: default;
+            margin-bottom: 5px;
+
+            p {
+                font: {
+                    size: 18px;
+                    weight: 400;
+                }
+
+                color: #666;
+                margin: 0;
+                cursor: default;
+            }
+
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+
+        .usageDetailsMenu3 {
+            border: 1px solid #14C6A4;
+
+            p {
+                color: #14C6A4;
+
+                font: {
+                    size: 18px;
+                    weight: 500;
+                }
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    // 이용내역 조회 + 검색창 +테이블
+    .contentBoxWrap {
+        width: 1133px;
+        height: 560px;
+        margin-top: 60px;
+
+        h2 {
+            text-align: center;
+            padding: 20px 0;
+
+            font: {
+                size: 32px;
+                width: 500;
+            }
+
+            color: #121211;
+            cursor: default;
+        }
+
+
+        //검색창
+        .input-group {
+            height: 50px;
+
+            input:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: #14C6A4;
+                border-right: 1px solid #dee2e6;
+            }
+
+            #usageButton {
+                padding: 0;
+                width: 60px;
+                height: auto;
+                background-color: transparent;
+                border-color: #dee2e6;
+
+                .usageInputBtn {
+                    vertical-align: middle;
+                    font-size: 28px;
+                    color: #14C6A4;
+                }
+
+                &:hover .usageInputBtn {
+                    color: #666;
+                }
+            }
+
+        }
+
+        .contentBox {
+            width: 100%;
+            height: 411px;
+
+            //테이블
+            .usageTable {
+                thead {
+                    text-align: center;
+                    vertical-align: middle;
+
+                    th {
+                        height: 40px;
+                        padding: 0;
+                        background-color: #f3f3f3;
+                        color: #333;
+                    }
+                }
+
+                tbody {
+                    tr {
+                        text-align: center;
+                        vertical-align: middle;
+
+                        td {
+                            height: 37px;
+                            background-color: #fff;
+                            padding: 0;
+                            cursor: default;
+
+                            &:nth-of-type(1) {
+                                width: 100px;
+                            }
+
+                            &:nth-of-type(2) {
+                                width: 350px;
+                                cursor: pointer;
+                                text-align: left;
+                                padding-left: 10px !important;
+
+                                &:hover {
+                                    color: #14C6A4 !important;
+                                }
+                            }
+
+                            &:nth-of-type(3) {
+                                width: 200px;
+                            }
+
+                            &:nth-of-type(4) {
+                                width: 150px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+            //페이지
+            .usagePage {
+                text-align: center;
+                margin-top: 20px;
+
+                button {
+                    background-color: #14C6A4;
+                    border: none;
+                    width: 70px;
+                    font-weight: 500;
+                }
+
+                span {
+                    margin: 0 26px;
+                }
+            }
+        }
+
+
+        //이용상세내역
+        .usageDetailsBox {
+            height: 474px !important;
+            border: 1px solid #dee2e6;
+            border-bottom: none !important;
+            border-radius: 0 !important;
+
+            .usageDetails1 {
+                width: 100%;
+
+                .usageDetilsFont {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 0 !important;
+
+                    p {
+                        margin: 0;
+
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+
+                        color: #666;
+                    }
+
+                    h4 {
+                        margin: 0;
+
+                        font: {
+                            size: 16px;
+                        }
+                    }
+                }
+
+                .usageDeiailsTb {
+                    height: 350px;
+                    border-left: transparent;
+                    margin: 0;
+
+                    tr {
+                        height: 40px;
+
+                        td,
+                        th {
+                            padding: 0 !important;
+                            vertical-align: middle;
+                            cursor: default;
+                        }
+
+                        th{
+                            width: 200px;
+                            text-align: center;
+                            font-size: 17px;
+                            background-color: #f3f3f3;
+                        }
+
+                        td{
+                            padding-left: 10px !important;
+                        }
+                    }
+
+                    tbody{
+                        span{
+                            font-weight: 700;
+                            color: #14C6A4;
+                        }
+                    }
+
+                    tfoot{
+                        th{
+                            background-color: #C4F2E8;
+                        }
+
+                        td {
+                            padding: 5px 10px !important;
+
+                            input{
+                                cursor: pointer;
+                            }
+                          
+                            span{
+                                font-weight: 700;
+                                color: #14C6A4;
+                                cursor: pointer;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .usageDetailsBoxWrap{
+            height: 560px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.Mainslide {
+  display: flex;
+  justify-content: center;
+  /* 가로 */
+  align-items: center;
+  /* 세로 */
+  position: relative;
+  top: 0;
+
+  h1 {
+    font-weight: 700 !important;
+    font-size: 40px;
+  }
+
+  .input-group {
+    width: 730px;
+    height: 56PX;
+    margin: 0 auto;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .MBTN {
+    height: 56px !important;
+    width: 355px;
+    color: #ffffff !important;
+    background-color: #14C6A4 !important;
+    border: 1PX solid #14C6A4;
+    font-weight: 400 !important;
+    font-size: 20px;
+  }
+
+  .MBTN:nth-of-type(1) {
+    margin-right: 1.2% !important;
+  }
+
+  .MBTN:hover {
+    color: #121212 !important;
+    border: 1PX solid #14C6A4;
+    background-color: #ffffff !important;
+  }
+
+  .MBTN:active {
+    border: 1PX solid #14C6A4 !important;
+  }
+
+  #button-addon2 {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    line-height: 10PX;
+
+    span {
+      color: #14C6A4;
+    }
+
+    span:hover {
+      color: #666;
+    }
+  }
+
+  .form-control:focus,
+  .form-control:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ffffff !important;
+    -webkit-box-shadow: none !important;
+  }
+
+  .form-control {
+    transition: none !important;
+  }
+}

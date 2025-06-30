@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.Bannerslide {
+   margin: 60px 0;
+   .carousel-indicators [data-bs-target] {
+      background-color: #14C6A4 !important;
+   }
+
+   a span {
+      color: #14C6A4 !important;
+      ;
+   }
+
+   .MBTN {
+      position: absolute;
+      bottom: 20.5%;
+      left: 24.3%;
+      padding: 6px 1% !important;
+      color: #ffffff !important;
+      background-color: #14C6A4 !important;
+      border: 1PX solid #14C6A4;
+      font-weight: 400 !important;
+      font-size: 18px;
+   }
+
+   .MBTN:hover {
+      color: #121212 !important;
+      border: 1PX solid #14C6A4;
+      background-color: #ffffff !important;
+   }
+
+   .BTNDIS {
+      position: relative;
+   }
+
+   .MBTN:active {
+
+      border: 1PX solid #14C6A4 !important;
+      ;
+   }
+
+}
